@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Services Price List</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #900C3F;
+            color: white;
+            padding: 20px 40px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        main {
+            display: flex;
+            margin: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .service-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            width: calc(30% - 20px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+            text-align: center;
+            color: #333;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            /* Remove underline */
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            background-color: #FFC107;
+            /* Unique color on hover */
+        }
+
+        .icon {
+            font-size: 40px;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #900C3F;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-media a:hover {
+            color: #FFC107;
+            /* Gold color on hover */
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 20px;
+            }
+
+            .service-cards {
+                gap: 10px;
+            }
+
+            .card {
+                width: 100%;
+                /* Ensure each card takes full width on smaller screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">All Services Price List</div>
+    </header>
+
+    <main>
+        <section class="service-cards" id="service-cards">
+            <!-- Service Cards -->
+            <a href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html" target="_blank" class="card"
+                data-service="new pan">
+                <h3>New PAN – Indian Citizen (Form 49A)</h3>
+                <p>Price: ₹300</p>
+                <div class="icon">🪪</div>
+            </a>
+            <a href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html" target="_blank" class="card"
+                data-service="change pan">
+                <h3>Changes or Correction in Existing PAN Data</h3>
+                <p>Price: ₹350</p>
+                <div class="icon">🪪</div>
+            </a>
+            <a href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html" target="_blank" class="card"
+                data-service="reprint pan">
+                <h3>Minor PAN Card</h3>
+                <p>Price: ₹600</p>
+                <div class="icon">🪪</div>
+            </a>
+            <a href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html" target="_blank" class="card"
+                data-service="reprint pan">
+                <h3>Reprint of PAN Card</h3>
+                <p>Price: ₹350</p>
+                <div class="icon">🪪</div>
+            </a>
+            <a href="https://www.incometax.gov.in/iec/foportal/" target="_blank" class="card"
+                data-service="instant pan">
+                <h3>Instant PAN Card (24 Hours)</h3>
+                <p>Price: ₹500</p>
+                <div class="icon">🪪</div>
+            </a>
+            <a href="https://myaadhaar.uidai.gov.in/" target="_blank" class="card" data-service="aadhaar pvc">
+                <h3>Order Aadhaar PVC Card</h3>
+                <p>Price: ₹150</p>
+                <div class="icon">🪪</div>
+            </a>
+            <a href="https://myaadhaar.uidai.gov.in/" target="_blank" class="card" data-service="aadhaar pvc">
+                <h3>Aadhaar Address Update</h3>
+                <p>Price: ₹250</p>
+                <div class="icon">🪪</div>
+            </a>
+            <a href="https://myaadhaar.uidai.gov.in/" target="_blank" class="card" data-service="aadhaar pvc">
+                <h3>Aadhaar Documents Update</h3>
+                <p>Price: ₹100</p>
+                <div class="icon">🪪</div>
+            </a>
+            <a href="https://voters.eci.gov.in/" target="_blank" class="card" data-service="new registration">
+                <h3>New registration for general electors</h3>
+                <p>Price: ₹100</p>
+                <div class="icon">🪪</div>
+            </a>
+            <a href="https://voters.eci.gov.in/" target="_blank" class="card" data-service="shifting residence">
+                <h3>Shifting of residence/correction of entries in existing electoral roll/replacement of EPIC/marking
+                    of PwD</h3>
+                <p>Price: ₹200</p>
+                <div class="icon">🪪</div>
+            </a>
+            <a href="https://sewasetu.assam.gov.in/" target="_blank" class="card" data-service="caste certificate">
+                <h3>Issuance of Caste Certificate</h3>
+                <p>Price: ₹500</p>
+                <div class="icon">📜</div>
+            </a>
+            <a href="https://sewasetu.assam.gov.in/" target="_blank" class="card" data-service="digitizing caste">
+                <h3>Digitizing Caste Certificate</h3>
+                <p>Price: ₹500</p>
+                <div class="icon">📜</div>
+            </a>
+            <a href="https://sewasetu.assam.gov.in/" target="_blank" class="card"
+                data-service="employment registration">
+                <h3>Registration of employment seeker in Employment Exchange</h3>
+                <p>Price: ₹110</p>
+                <div class="icon">📜</div>
+            </a>
+            <a href="https://sewasetu.assam.gov.in/" target="_blank" class="card"
+                data-service="employment re-registration">
+                <h3>Re-registration of employment seeker in Employment Exchange</h3>
+                <p>Price: ₹110</p>
+                <div class="icon">📜</div>
+            </a>
+            <a href="https://sewasetu.assam.gov.in/" target="_blank" class="card" data-service="renewal registration">
+                <h3>Renewal of Registration Card of employment seeker in Employment Exchange</h3>
+                <p>Price: ₹110</p>
+                <div class="icon">📜</div>
+            </a>
+            <a href="https://voters.eci.gov.in/" target="_blank" class="card" data-service="new registration">
+                <h3>ABHA Card</h3>
+                <p>Price: ₹100</p>
+                <div class="icon">🪪</div>
+            </a>
+            <a href="https://voters.eci.gov.in/" target="_blank" class="card" data-service="new registration">
+                <h3>Ayushman Card</h3>
+                <p>Price: ₹100</p>
+                <div class="icon">🪪</div>
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bora Online Services</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+</body>
+
+</html>
